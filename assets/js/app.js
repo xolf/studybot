@@ -113,7 +113,7 @@ function Schritt()
 
 	if(this.direction == 3)
 	{ 
-		if (this.posX-1 <= worldX && this.PosX-1 >= 1)
+		if (this.posX-1 <= worldX && this.PosX-1 <= 0)
 		{ 
 
 			this.posX--;
@@ -129,7 +129,7 @@ function Schritt()
 
 	if(this.direction == 0)
 	{ 
-		if (this.posY-1 <= worldY && this.PosY-1 >= 1)
+		if (this.posY-1 <= worldY && this.PosY-1 <= 0)
 		{ 
 
 			this.posY--;
