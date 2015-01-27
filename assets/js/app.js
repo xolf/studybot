@@ -35,14 +35,14 @@ function errorLog(error, type)
 function Bot(posX, posY, direction, name)
 {
 
-	if(typeof worldX === "undefined" && typeof worldY === "undefined")
-	{
-
-		errorLog("Es wurde keine Welt festgelegt", 1);
-
-		runCode = false;
-
-	}
+	//if(typeof worldX === "undefined" && typeof worldY === "undefined")
+	//{
+	//
+	//	errorLog("Es wurde keine Welt festgelegt", 1);
+	//
+	//	runCode = false;
+	//
+	//}
 
 	this.posY = posY;
 
@@ -176,6 +176,10 @@ function Welt(x, y)
 
 	worldX = x;
 
+	document.cookie="worldX="+x;
+
 	worldY = y;
+
+	document.cookie="worldY="+y;
 
 }
