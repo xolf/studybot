@@ -178,8 +178,44 @@ function Welt(x, y)
 
 	document.cookie="worldX="+x;
 
+
+
 	worldY = y;
 
 	document.cookie="worldY="+y;
+
+	var iX = 0;
+
+	var iY = 0;
+
+	var leftSpace = worldX * 26;
+
+	document.write('<div style="margin: auto; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
+
+	while(worldX-1 >= iX)
+	{
+
+		document.write('<div style="margin: 0px; margin-left: ' + (leftSpace - (iX * 26)) + 'px; padding: 0px; height: 26px;">');
+
+		while(worldY-1 >= iY)
+		{
+
+			if(iY == 0) document.write('<img style="margin-left: 0px; margin-top: 0px;" src="assets/img/ground.png">');
+
+			else document.write('<img style="margin-left: -26px; margin-top: 0px;" src="assets/img/ground.png">');
+
+			iY++;	
+
+		}
+
+		iY = 0;	
+
+		document.write('</div>');
+
+		iX++;
+
+	}
+
+	document.write('</div>');
 
 }

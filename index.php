@@ -31,7 +31,7 @@ $_SESSION['raw_code'] = $_POST['code'];
 		    </div>
 		    <div class="col-md-6">
 		    <div class="viewer">
-		    	<iframe id="viewer" src="test.php">
+		    	<iframe id="viewer" src="frame.php">
 		    	Dein Browser unterstützt keine iFrames
 		    	</iframe>
       		</div>	
