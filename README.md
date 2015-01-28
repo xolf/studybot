@@ -18,4 +18,16 @@ Definiert den Bot bei x,y mit der Blickrichtung s und dem Namen n
 ```javascript
 Bot.Schritt();
 ```
-Lässt den Bot 1 Schritt nach vorne gehen
+Lässt den Bot einen Schritt nach vorne gehen
+```javascript
+Bot.LinksDrehen();
+```
+Lässt den Bot nach links drehen
+```javascript
+Bot.RechtsDrehen();
+```
+Lässt den Bot nach rechts drehen
+```javascript
+Bot.Postion();
+```
+Gibt die Position des Bots aus
