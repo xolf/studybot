@@ -62,6 +62,9 @@ function Bot(posX, posY, direction, name)
 
 	}
 
+	document.write('<div style="position: fixed; margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
+
+	document.write('</div>');
 
 	//Definierung der Methoden
 
@@ -188,9 +191,9 @@ function Welt(x, y)
 
 	var iY = 0;
 
-	var leftSpace = worldX * 26;
+	leftSpace = worldX * 26;
 
-	document.write('<div style="margin: auto; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
+	document.write('<div style="margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
 
 	while(worldX-1 >= iX)
 	{

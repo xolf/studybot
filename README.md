@@ -5,8 +5,8 @@ Live Demo: [Studybot.xolf.info](http://studybot.xolf.info/)
 #
 Orginal Idea by [Robot Karol](http://www.schule.bayern.de/karol/)
 
-### German
-#### Befehle
+## German
+### Befehle
 ```javascript
 Welt(x,y);
 ```
