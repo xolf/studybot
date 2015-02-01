@@ -62,6 +62,8 @@ function Bot(posX, posY, direction, name)
 
 	}
 
+	//Render Engine fuer den Bot
+
 	document.write('<div style="position: fixed; margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
 
 	document.write('</div>');
