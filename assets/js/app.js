@@ -62,11 +62,11 @@ function Bot(posX, posY, direction, name)
 
 	}
 
-	//Render Engine fuer den Bot
+	//Render Engine fuer den Bot	
 
-	document.write('<div style="position: fixed; margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
+	document.write('<img style="position: absolute; margin-left: ' + (((posY * 52) + 26) + (worldY - posX + 1) * 26 - 100) + 'px; margin-top: ' + (0 + (posX * 26 ))+ 'px;" src="assets/skins/melow/' + direction + '.png">');
 
-	document.write('</div>');
+	errorLog((worldY - posX), 0);
 
 	//Definierung der Methoden
 
@@ -195,7 +195,7 @@ function Welt(x, y)
 
 	leftSpace = worldX * 26;
 
-	document.write('<div style="margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
+	document.write('<div style="position: absolute; margin: auto; margin-top: 100px; width: ' + (((worldY * 52) + 26) + leftSpace) + 'px; height: ' + worldX * 26 + 'px;">');
 
 	while(worldX-1 >= iX)
 	{
