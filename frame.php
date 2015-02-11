@@ -2,6 +2,8 @@
 session_start();
 
 $code = $_SESSION['raw_code'];
+$code = str_replace("\n", "\nsleep(500);\n", $code);
+//$code = '$(document).ready ( function(){ '.$code.'});';
 
 ?>
 <!DOCTYPE html>
