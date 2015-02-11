@@ -4,25 +4,6 @@ runCode = true;
 
 //Defining funcitons
 
-function sleep(milliseconds) 
-{
-  
-  var start = new Date().getTime();
-
-  for (var i = 0; i < 1e7; i++) 
-  {
-
-    if ((new Date().getTime() - start) > milliseconds)
-    {
-
-      break;
-
-    }
-
-  }
-  
-}
-
 
 
 function errorLog(error, type)
@@ -89,9 +70,7 @@ function Bot(posX, posY, direction, name)
 
 	//Render Engine fuer den Bot	
 
-	document.write('<img style="position: absolute; margin-left: ' + (((posY * 52) + 26) + (worldY - posX + 1) * 26 - 100) + 'px; margin-top: ' + (0 + (posX * 26 ))+ 'px;" src="assets/skins/melow/' + direction + '.png">');
-
-	errorLog((worldY - posX), 0);
+	document.write('<img style="position: absolute; margin-left: ' + (((posY * 52) + 26) + (worldY - posX + 1) * 26 - 100) + 'px; margin-top: ' + (0 + (posX * 26 ))+ 'px;" src="assets/skins/melow/' + direction + '.png" id="bot-' + name + '">');
 
 	//Definierung der Methoden
 
